@@ -70,20 +70,23 @@ select option{
 .main-navigation{
 	display: flex;
 	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;/* 
+	-ms-flex-direction: column;
+	flex-direction: column;
+	    /*
 	    -webkit-align-items: flex-start;
-	            align-items: flex-start; */
-	/*  */
-	/* min-height: 599px; */
-}
+	    align-items: flex-start; */
+	    /*  */
+	    /* min-height: 599px; */
+	}
 
-.main-header-logo{
-
-		padding-top: 20px;
+	.main-header-logo{
+		display: inline;
+		/* padding-top: 20px; */
 		padding-left: 25px;
+		margin-top: 10px;
 		height: 73px;
 		width: 73px;
+		float: left;
 		/* display: block; */
 	}
 	.site-navigation{
@@ -93,7 +96,6 @@ select option{
 		margin: 0;
 		padding: 0;
 		list-style: none;
-
 	}
 
 	.site-navigation a{
@@ -104,6 +106,7 @@ select option{
 		font-size: 15px;
 		font-weight: 700;
 		line-height: 20px;
+		float: right;
 	}
 
 	.site-navigation a:hover,
@@ -126,6 +129,7 @@ select option{
 	select:focus {
 		color: #eaeaea;
 	}
+
 
 	.header-text {
 		width: 430px;
@@ -213,16 +217,17 @@ select option{
 		padding-left: 1.3em;
 	}
 
-	button {
+	.prev, .next {
 		background: #fe992a;
 		border: none;
 		width: 30px;
 		height: 30px;
 		color: #FFF;
-		/* position: relative; */
+		position: relative;
 		font-size: 11.11px;
 		line-height: 8.52px;
 		font-weight: bold;
+		text-align: center;
 	}
 
 	button:active,
@@ -239,7 +244,6 @@ select option{
 	.quote {
 		color: #fe992a;
 		font-style: italic;
-		line-height: 28px;
 		font-size: 20px;
 		border-right: 1px solid #eaeaea;
 		height: 295px;
@@ -301,14 +305,10 @@ select option{
 
 	.footer-services {
 		width: 60px;
-		padding-right: 75px;
+		padding-right: 60px;
 	}
 
-	.footer-markets {
-		width: 60px;
-		padding-right: 70px;
-	}
-
+	.footer-markets,
 	.footer-HSEQ {
 		width: 60px;
 		padding-right: 70px;
@@ -347,4 +347,4 @@ select option{
 		line-height: 24px;
 		text-align: left;
 	}
-/* ------------------------ FOOTER END ------------------------ */
+/* ------------------------ /FOOTER ------------------------ */
